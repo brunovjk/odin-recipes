@@ -24,15 +24,18 @@ h1 {
 
 .card-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: 16px;
+  gap: 16px;
 }
 
 .card {
   border: 1px solid #000;
   border-radius: 12px;
-  padding: 15px;
-  margin: 15px;
+  padding: 16px;
 
   width: 240px;
+  flex-shrink: 0;
   background-color: #fffafa;
   text-align: left;
 }
