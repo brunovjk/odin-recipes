@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 * {
   margin: 0;
   /* border: 2px solid green; */
@@ -69,11 +71,27 @@ header ul {
   line-height: 1.3;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f2937;
+  background-color: #e5e7eb;
+  height: 12vh;
+}
+
+.search input {
+  width: 40%;
+  padding: 12px;
+  border-radius: 12px;
+}
+
 .card-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 16px;
-  gap: 16px;
+  margin: 64px;
+  gap: 32px;
 }
 
 .card {
