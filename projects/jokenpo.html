@@ -32,45 +32,43 @@
     </div>
 
     <div class="container">
-      <h2>Choose your Weapon</h2>
-      <p>First to score 5 points wins the game</p>
-      <div class="results">
-        <div class="results-player">
-          <span class="results-player-emoji">❓</span>
-          <p>Player: 0</p>
-        </div>
-        <div class="results-computer">
-          <span class="results-computer-emoji">❓</span>
-          <p>Computer: 0</p>
+      <div class="scoreboard">
+        <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+        <h3 class="score-message" id="scoreMessage">
+          First to score 5 points wins the game
+        </h3>
+        <div class="scores-container">
+          <div class="score-box">
+            <div class="sign" id="playerSign">❔</div>
+            <p class="score" id="playerScore">Player: 0</p>
+          </div>
+          <div class="score-box">
+            <div class="sign" id="computerSign">❔</div>
+            <p class="score" id="computerScore">Computer: 0</p>
+          </div>
         </div>
       </div>
-      <div class="choices">
-        <button class="button-82-pushable" role="button">
-          <span class="button-82-shadow"></span>
-          <span class="button-82-edge"></span>
-          <span class="button-82-front text">Jo</span>
+      <div class="buttons">
+        <button class="btn btn-square" id="rockBtn">
+          <div class="sign">✊</div>
         </button>
-        <button class="button-82-pushable" role="button">
-          <span class="button-82-shadow"></span>
-          <span class="button-82-edge"></span>
-          <span class="button-82-front text">Ken</span>
+        <button class="btn btn-square" id="paperBtn">
+          <div class="sign">✋</div>
         </button>
-        <button class="button-82-pushable" role="button">
-          <span class="button-82-shadow"></span>
-          <span class="button-82-edge"></span>
-          <span class="button-82-front text">Po</span>
+        <button class="btn btn-square" id="scissorsBtn">
+          <div class="sign">✌</div>
         </button>
       </div>
-
-      <button class="button-82-pushable" role="button">
-        <span class="button-82-shadow"></span>
-        <span class="button-82-edge"></span>
-        <span class="button-82-front text">Play Again</span>
-      </button>
     </div>
 
     <div class="footer">Copyright © Odin Recipes 2023</div>
 
-    <script src="./fizz.js"></script>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="./jokenpo.js"></script>
   </body>
 </html>

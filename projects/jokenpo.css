@@ -3,47 +3,146 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
   margin-block: 64px;
   gap: 64px;
 }
 
-.container h2,
-.container p {
-  color: #1f2937;
+.scoreboard {
+  margin-bottom: 15px;
 }
 
-.container p {
-  font-size: 24px;
+.score-info {
+  font-size: 32px;
 }
 
-.results {
+.score-message {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.scores-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  gap: 96px;
+  justify-content: space-between;
+  max-width: 400px;
+  padding: 10px;
+  margin: 0 auto;
 }
 
-.results-player,
-.results-computer {
+.score-box {
+  width: 170px;
+}
+
+.score {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.buttons {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-
-  gap: 16px;
+  justify-content: center;
+  gap: 30px;
 }
 
-.results-player-emoji,
-.results-computer-emoji {
-  font-size: 64px;
+.btn {
+  border-radius: 10px;
+  background-color: #1f2937;
+  cursor: pointer;
 }
 
-.choices {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-block: 32px;
-  gap: 64px;
+.btn-square {
+  width: 160px;
+  height: 160px;
+}
+
+.btn:hover {
+  background-color: #3b4f6b;
+}
+
+.btn:active {
+  background-color: #7094c7;
+}
+
+.sign {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f9faf8;
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn-restart {
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #f9faf8;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.overlay.active {
+  display: block;
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .score-info {
+    font-size: 26px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .btn-square {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sign {
+    font-size: 50px;
+  }
+
+  .modal {
+    width: 95%;
+  }
 }
