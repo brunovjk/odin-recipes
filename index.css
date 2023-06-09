@@ -132,17 +132,25 @@ header ul {
 
 .quote {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #1f2937;
   background-color: #e5e7eb;
   height: 40vh;
+  gap: 12px;
+  padding-inline: 25vw;
 }
 
 .quote em {
   font-size: 36px;
+}
+
+.quote h2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   font-weight: 800;
-  max-width: 50vw;
 }
 
 .footer {
