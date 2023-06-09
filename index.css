@@ -17,9 +17,23 @@ ul {
   list-style: none;
 }
 
-h1 {
-  color: darkred;
-  margin: 12px;
+header {
+  background-color: #1f2937;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 32px;
+
+  color: whitesmoke;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding-inline: 32px;
 }
 
 .card-list {
