@@ -89,6 +89,7 @@ header ul {
 }
 
 .search input {
+  width: 40%;
   padding: 12px;
   border-radius: 12px;
 }
