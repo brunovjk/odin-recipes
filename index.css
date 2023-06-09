@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -153,9 +154,8 @@ header ul {
   align-items: center;
   color: #1f2937;
   background-color: #e5e7eb;
-  height: 40vh;
+  padding: 64px 30%;
   gap: 12px;
-  padding-inline: 25vw;
 }
 
 .quote em {
