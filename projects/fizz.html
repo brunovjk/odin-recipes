@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Recipes</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
-    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./fizz.css" />
   </head>
   <body>
     <header>
@@ -21,18 +21,23 @@
       <div>
         <h1>Fizz or Buzz?</h1>
         <p>
-          If a number is divisible by 3, the student says “fizz” rather than the
-          number. If a number is divisible by 5, they say “buzz” rather than the
-          number. If a number is divisible by both, they say “fizz buzz”
+          If a number is divisible by 3, the student says "fizz" rather than the
+          number. If a number is divisible by 5, they say "buzz" rather than the
+          number. If a number is divisible by both, they say "fizz buzz".
         </p>
       </div>
       <img src="../images/health-food.svg" alt="Happy and Healthy Food" />
     </div>
 
     <form class="search" id="formId">
-      <input type="number" placeholder="Type a Number" />
-      <button type="submit">Fizz or Buzz?</button>
-      <p id="outputId">???</p>
+      <input
+        type="text"
+        placeholder="Type a list of Numbers: 1, 2, 3, ... Just separate them with commas"
+      />
+      <button type="submit" class="btn">Fizz or Buzz?</button>
+      <p id="outputId">
+        Numbers like: 1, 2, 3, 6, 5, 8, 655, 225, 33666, 21456 also work
+      </p>
     </form>
 
     <div class="footer">Copyright © Odin Recipes 2023</div>
