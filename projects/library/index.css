@@ -1,0 +1,54 @@
+.buttonDiv {
+  padding-top: 4rem;
+}
+
+/* Recipe Card */
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4rem;
+  gap: 2rem;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 0.75rem;
+  padding: 1rem;
+
+  width: 15rem;
+  flex-shrink: 0;
+  background-color: #fffafa;
+  text-align: left;
+}
+
+.card:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.card h3 {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.card img {
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  width: 100%;
+  height: 6.25rem;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 0.75rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card h6 {
+  padding: 1rem;
+}
