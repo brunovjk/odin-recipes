@@ -5,31 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Recipes</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
-    <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="./jokenpo.css" />
-    <link rel="stylesheet" href="../styles/custom-button.css" />
+    <!-- Globals Styles -->
+    <link rel="stylesheet" href="../../index.css" />
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <header>
-      <h1><a href="../index.html">Odin Recipes</a></h1>
-      <ul>
-        <li><a href="./fizz.html">FizzBuzz</a></li>
-        <li><a href="./jokenpo.html">JoKenPo</a></li>
-        <li><a href="#">Calculator</a></li>
-      </ul>
+      <h1><a href="../../index.html">Odin Recipes</a></h1>
+      <nav class="dropdown">
+        <button class="dropbtn">&#9776;</button>
+        <ul class="dropdown-content">
+          <li><a href="../fizz/index.html">FizzBuzz</a></li>
+          <li><a href="../jokenpo/index.html">JoKenPo</a></li>
+          <li><a href="../library/index.html">Library</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <div class="hero">
-      <div>
-        <h1>Jo Ken Po</h1>
-        <p>
-          Also known as "Rock Paper Scissors" or "Roshambo," is a hand game
-          commonly played between two people.
-        </p>
-        <p>In our game you play against the computer</p>
-      </div>
-      <img src="../images/health-food.svg" alt="Happy and Healthy Food" />
-    </div>
 
     <div class="container">
       <div class="scoreboard">
@@ -69,6 +61,7 @@
     </div>
     <div class="overlay" id="overlay"></div>
 
-    <script src="./jokenpo.js"></script>
+    <!-- Scripts -->
+    <script src="./index.js"></script>
   </body>
 </html>
