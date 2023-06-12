@@ -78,90 +78,36 @@ header ul {
 
 .search {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #1f2937;
-  background-color: #e5e7eb;
-  height: 12vh;
-  gap: 16px;
-}
-
-.search input {
-  width: 40%;
-  padding: 12px;
-  border-radius: 12px;
-}
-
-.card-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 64px;
-  gap: 32px;
-}
-
-.card {
-  border: 1px solid #000;
-  border-radius: 12px;
-  padding: 16px;
-
-  width: 240px;
-  flex-shrink: 0;
-  background-color: #fffafa;
-  text-align: left;
-}
-
-.card:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-.card h3 {
-  text-align: center;
-  margin: 8px;
-}
-
-.card img {
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-}
-
-.card p {
-  padding: 12px;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.card h6 {
-  padding: 16px;
-}
-
-.quote {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #1f2937;
   background-color: #e5e7eb;
-  padding: 64px 30%;
-  gap: 12px;
+  padding-block: 64px;
+  gap: 64px;
 }
 
-.quote em {
-  font-size: 36px;
+.search input {
+  width: 60%;
+  padding: 12px;
+  border-radius: 12px;
 }
 
-.quote h2 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 800;
+.btn {
+  border-radius: 12px;
+  padding: 12px;
+
+  background-color: #1f2937;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3b4f6b;
+}
+
+.btn:active {
+  background-color: #7094c7;
 }
 
 .footer {
