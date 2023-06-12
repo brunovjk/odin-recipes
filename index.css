@@ -1,105 +1,3 @@
-* {
-  margin: 0;
-}
-
-body {
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-/* NavBar */
-
-header {
-  background-color: #1f2937;
-  height: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 32px;
-
-  color: #f9faf8;
-}
-
-header h1 {
-  font-size: 24px;
-}
-
-header nav {
-  overflow: hidden;
-}
-
-header nav a {
-  float: center;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-header nav a:hover,
-.dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  transform: translateX(calc(-100% + 46px));
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 /* Hero Section */
 .hero {
   display: flex;
@@ -108,25 +6,25 @@ header nav a:hover,
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  padding-inline: 32px;
+  padding-inline: 2rem;
   color: #f9faf8;
 }
 
 .hero div {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
   color: #f9faf8;
 }
 
 .hero p {
-  max-width: 360px;
-  font-size: 24px;
+  max-width: 22.5rem;
+  font-size: 1.5rem;
   color: #f9faf8;
   line-height: 1.3;
 }
@@ -138,19 +36,20 @@ header nav a:hover,
 
 /* Search Bar */
 .search {
+  height: 12vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #1f2937;
   background-color: #e5e7eb;
-  height: 12vh;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .search input {
   width: 40%;
-  padding: 12px;
-  border-radius: 12px;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
 }
 
 /* Recipe Card */
@@ -158,16 +57,16 @@ header nav a:hover,
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 64px;
-  gap: 32px;
+  margin: 4rem;
+  gap: 2rem;
 }
 
 .card {
   border: 1px solid #000;
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 0.75rem;
+  padding: 1rem;
 
-  width: 240px;
+  width: 15rem;
   flex-shrink: 0;
   background-color: #fffafa;
   text-align: left;
@@ -179,19 +78,19 @@ header nav a:hover,
 
 .card h3 {
   text-align: center;
-  margin: 8px;
+  margin: 0.5rem;
 }
 
 .card img {
   border: 1px solid #ddd;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   object-fit: cover;
 }
 
 .card p {
-  padding: 12px;
+  padding: 0.75rem;
 
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -201,7 +100,7 @@ header nav a:hover,
 }
 
 .card h6 {
-  padding: 16px;
+  padding: 1rem;
 }
 
 /* Quote */
@@ -212,12 +111,12 @@ header nav a:hover,
   align-items: center;
   color: #1f2937;
   background-color: #e5e7eb;
-  padding: 64px 30%;
-  gap: 12px;
+  padding: 4rem 30%;
+  gap: 0.75rem;
 }
 
 .quote em {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .quote h2 {
@@ -227,25 +126,13 @@ header nav a:hover,
   font-weight: 800;
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  color: #e5e7eb;
-  line-height: 1.3;
-  background-color: #1f2937;
-  height: 12vh;
-}
-
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .hero h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }

@@ -6,7 +6,7 @@
     <title>Odin Recipes</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <!-- Globals Styles -->
-    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="../../globals.css" />
     <!-- Page Styles -->
     <link rel="stylesheet" href="./index.css" />
   </head>
@@ -22,18 +22,24 @@
         </ul>
       </nav>
     </header>
-    <form class="search" id="formId">
-      <input
-        type="text"
-        placeholder="Type a list of Numbers: 1, 2, 3, ... Just separate them with commas"
-      />
-      <button type="submit" class="btn">Fizz or Buzz?</button>
-      <p id="outputId">
-        Numbers like: 1, 2, 3, 6, 5, 8, 655, 225, 33666, 21456 also work
-      </p>
-    </form>
 
-    <div class="footer">Copyright © Odin Recipes 2023</div>
+    <main class="main-container">
+      <form class="search" id="formId">
+        <label for="formId"><h1>Fizz or Buzz?</h3></label>
+        <input
+          type="text"
+          pattern="[0-9]+(,[0-9]+)*"
+          placeholder="Type a list of Numbers: 1, 2, 3, ... "
+          required
+        />
+        <button type="submit" class="btn">Fizz or Buzz?</button>
+        <p id="outputId">
+          Numbers like: 1, 2, 3, 6, 5, 8, 655, 225, 33666, 21456 also work.
+        </p>
+      </form>
+    </main>
+
+    <footer class="footer">Copyright © Odin Recipes 2023</footer>
 
     <!-- Scripts -->
     <script src="./index.js"></script>

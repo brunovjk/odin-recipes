@@ -1,9 +1,0 @@
-.container {
-  min-height: calc(76vh - 64px); /* ( 100vh - Footer - Header ) */
-  margin-block: 64px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 64px;
-}
