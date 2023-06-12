@@ -11,7 +11,6 @@ overlay.addEventListener("click", closeAddBookModal);
 
 addBookBtn.addEventListener("click", () => {
   console.log("ola");
-  closeAddBookModal();
 });
 
 function openAddBookModal() {
@@ -29,8 +28,8 @@ function closeAddBookModal() {
 // function Book() {
 //     this.author= ,
 //     this.title= ,
-//     this.number=  ,
-//     this.pages=
+//     this.pages=  ,
+//     this.readed=
 // }
 
 // function addBookToLibrary() {
