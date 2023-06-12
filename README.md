@@ -2,6 +2,10 @@
 
 Welcome to Odin Recipes! This is a web application that allows you to explore and share a collection of delicious recipes. Whether you're a seasoned chef or just starting out in the kitchen, you'll find a wide variety of culinary delights to discover and try out.
 
+### Live Demo
+
+[Odin Recipes](https://brunovjk.github.io/odin-recipes/)
+
 ## Features
 
 - **Browse Recipes:** Explore a vast collection of recipes organized by categories such as breakfast, lunch, dinner, desserts, and more. Each recipe comes with detailed instructions and a list of ingredients.
@@ -9,7 +13,7 @@ Welcome to Odin Recipes! This is a web application that allows you to explore an
 
 ## Additional Pages
 
-In addition to serving as the home of Odin Recipes, this repository also showcases my learning projects (@brunovjk), with the potential for future additions.
+In addition to serving as the home of Odin Recipes, this repository also showcases @brunovjk's learning projects.
 
 ## Technologies Used
 
