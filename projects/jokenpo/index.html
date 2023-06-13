@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Recipes</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico" />
     <!-- Globals Styles -->
     <link rel="stylesheet" href="../../globals.css" />
     <!-- Page Styles -->
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -53,8 +53,12 @@
       </div>
     </main>
 
-    <footer class="footer">Copyright © Odin Recipes 2023</footer>
-
+    <footer class="footer">
+      Copyright © Odin Recipes
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </footer>
     <div class="modal" id="endgameModal">
       <p class="modal-title" id="endgameMsg"></p>
       <button class="btn btn-restart" id="restartBtn">Play again</button>
@@ -62,6 +66,6 @@
     <div class="overlay" id="overlay"></div>
 
     <!-- Scripts -->
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

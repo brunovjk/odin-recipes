@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Recipes</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico" />
     <!-- Globals Styles -->
     <link rel="stylesheet" href="../../globals.css" />
     <!-- Page Styles -->
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -24,73 +24,29 @@
     </header>
 
     <main class="main-container">
-      <div class="buttonDiv">
-        <button class="btn" id="openAddBookModalBtn">
-          <h1>+ Add Book</h1>
-        </button>
-      </div>
-      <div class="card-list">
-        <div class="card">
-          <a href="./recipes/croissant.html">
-            <h3>Croissant</h3>
-            <img src="./images/croissants.jpg" alt="A delicious Croissant" />
-            <p>
-              Buttery, flaky pastry that delights with its layers. A French
-              classic to savor any time of day.
-            </p>
-            <h6>45 min.</h6>
-          </a>
-        </div>
-        <div class="card">
-          <a href="./recipes/lasagna.html">
-            <h3>Lasagna</h3>
-            <img src="./images/lasagna.jpg" alt="A delicious Lasagna" />
-            <p>
-              Hearty Italian favorite with layers of pasta, rich sauce, meat,
-              and cheese. A comforting indulgence.
-            </p>
-            <h6>45 min.</h6>
-          </a>
-        </div>
-        <div class="card">
-          <a href="./recipes/salad.html">
-            <h3>Salad</h3>
-            <img src="./images/salad.jpg" alt="A delicious Salad" />
-            <p>
-              Fresh and vibrant mix of crisp greens, juicy tomatoes, and
-              colorful vegetables. A refreshing delight.
-            </p>
-            <h6>45 min.</h6>
-          </a>
-        </div>
-        <div class="card">
-          <a href="./recipes/yogurt.html">
-            <h3>Yogurt</h3>
-            <img src="./images/yogurt.jpg" alt="A delicious Yogurt" />
-            <p>
-              Creamy and tangy delight, perfect as a snack or versatile
-              ingredient. Nourish your body with every bite.
-            </p>
-            <h6>45 min.</h6>
-          </a>
-        </div>
-      </div>
+      <button class="btn add-btn" id="openAddBookModalBtn">
+        <h1>+ Add Book</h1>
+      </button>
+
+      <div class="book-list" id="bookList"></div>
     </main>
 
-    <footer class="footer">Copyright © Odin Recipes 2023</footer>
-
+    <footer class="footer">
+      Copyright © Odin Recipes
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </footer>
     <div class="modal" id="addBookModal">
-      <form class="addBookForm" id="formId">
-        <label for="formId" class="modal-title" id="addBookMsg"
-          ><h6>Add a new Book</h6></label
-        >
+      <form class="add-book-form" id="addBookForm">
+        <label for="addBookForm" class="modal-title">Add a new Book</label>
 
-        <input type="text" placeholder="Title" required />
-        <input type="text" placeholder="Author" required />
-        <input type="number" placeholder="Pages" required />
-        <div class="checkBookReaded">
-          <label for="bookReaded">Have you read it?</label>
-          <input id="bookReaded" type="checkbox" required />
+        <input id="title" type="text" placeholder="Title" required />
+        <input id="author" type="text" placeholder="Author" required />
+        <input id="pages" type="number" placeholder="Pages" required />
+        <div class="is-readed-check">
+          <label for="is-readed-check">Have you read it?</label>
+          <input id="isReadedCheck" type="checkbox" />
         </div>
 
         <button type="submit" class="btn" id="addBookBtn">
@@ -101,6 +57,6 @@
     <div class="overlay" id="overlay"></div>
 
     <!-- Scripts -->
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

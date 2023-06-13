@@ -1,9 +1,9 @@
-.buttonDiv {
-  padding-top: 4rem;
+.add-btn {
+  margin-top: 4rem;
 }
 
 /* Recipe Card */
-.card-list {
+.book-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -11,7 +11,13 @@
   gap: 2rem;
 }
 
-.card {
+.book-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
   border: 1px solid #000;
   border-radius: 0.75rem;
   padding: 1rem;
@@ -22,48 +28,41 @@
   text-align: left;
 }
 
-.card:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-.card h3 {
+.book-title {
   text-align: center;
-  margin: 0.5rem;
+  width: 80%;
 }
 
-.card img {
-  border: 1px solid #ddd;
-  border-radius: 0.75rem;
+.book-btn {
   width: 100%;
-  height: 6.25rem;
-  object-fit: cover;
 }
 
-.card p {
-  padding: 0.75rem;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.book-btn-light-green {
+  background-color: #6bff66;
+  color: black;
 }
 
-.card h6 {
-  padding: 1rem;
+.book-btn-light-red {
+  background-color: #fa5858;
+  color: black;
+}
+
+.book-btn-light-green:hover,
+.book-btn-light-red:hover {
+  color: white;
 }
 
 /* From */
 
-.addBookForm {
+.add-book-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.checkBookReaded label {
+.is-readed-check label {
   font-size: 1rem;
   font-weight: 500;
   padding-right: 1rem;
