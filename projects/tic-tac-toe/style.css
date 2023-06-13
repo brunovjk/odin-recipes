@@ -1,0 +1,37 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-rows: 120px 120px 120px;
+  width: 100%;
+  padding: 1em 0 1em 0;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.player {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+  margin: 0;
+  gap: 2rem;
+}
+
+.btn-p {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+}
+
+.btn-rst {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
