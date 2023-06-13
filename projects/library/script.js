@@ -72,7 +72,7 @@ const createBookCard = (book) => {
   const readBtn = document.createElement("button");
   const removeBtn = document.createElement("button");
 
-  bookCard.classList.add("book-card");
+  bookCard.classList.add("card");
   title.classList.add("book-title");
   readBtn.classList.add("btn", "book-btn");
   removeBtn.classList.add("btn", "book-btn");
@@ -85,10 +85,10 @@ const createBookCard = (book) => {
   removeBtn.textContent = "Remove";
 
   if (book.isReaded) {
-    readBtn.textContent = "Read";
+    readBtn.textContent = "Readed";
     readBtn.classList.add("book-btn-light-green");
   } else {
-    readBtn.textContent = "Not read";
+    readBtn.textContent = "Not Readed";
     readBtn.classList.add("book-btn-light-red");
   }
 

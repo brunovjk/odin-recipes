@@ -26,25 +26,62 @@ li {
 input {
   padding: 0.75rem;
   border-radius: 0.75rem;
+  border: 0px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  transition: box-shadow 0.3s ease-out;
+}
+
+input:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
 }
 /* Custom Button*/
 .btn {
   border-radius: 0.75rem;
   padding: 0.75rem;
+  border: 0px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
   background-color: #1f2937;
   color: #e5e7eb;
   cursor: pointer;
+
+  transition: box-shadow 0.3s ease-out;
 }
 
 .btn:hover {
   background-color: #3b4f6b;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
 }
 
 .btn:active {
   background-color: #7094c7;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 2px;
 }
 
+/* Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 0.75rem;
+  padding: 1rem;
+
+  width: 15rem;
+  flex-shrink: 0;
+  background-color: #fffafa;
+  text-align: left;
+
+  transition: box-shadow 0.3s ease-out;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+}
 /* Main */
 .main-container {
   min-height: 80vh;
@@ -54,7 +91,9 @@ input {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: #f0eef1;
 }
+
 /* Modal */
 .modal {
   position: fixed;

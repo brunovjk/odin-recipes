@@ -11,30 +11,13 @@
   gap: 2rem;
 }
 
-.book-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  border: 1px solid #000;
-  border-radius: 0.75rem;
-  padding: 1rem;
-
-  width: 15rem;
-  flex-shrink: 0;
-  background-color: #fffafa;
-  text-align: left;
-}
-
 .book-title {
   text-align: center;
   width: 80%;
 }
 
 .book-btn {
-  width: 100%;
+  width: 80%;
 }
 
 .book-btn-light-green {
