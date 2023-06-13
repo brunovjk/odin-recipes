@@ -11,18 +11,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1><a href="../../index.html">Odin Recipes</a></h1>
-      <nav class="dropdown">
-        <button class="dropbtn">&#9776;</button>
-        <ul class="dropdown-content">
-          <li><a href="../fizz/index.html">FizzBuzz</a></li>
-          <li><a href="../jokenpo/index.html">JoKenPo</a></li>
-          <li><a href="../library/index.html">Library</a></li>
-        </ul>
-      </nav>
-    </header>
-
+    <!-- Header Page -->
+    <div class="header-container-page" id="header-container-page"></div>
+    <!-- Main Container -->
     <main class="main-container">
       <div class="scoreboard">
         <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
@@ -52,20 +43,17 @@
         </button>
       </div>
     </main>
-
-    <footer class="footer">
-      Copyright © Odin Recipes
-      <script>
-        document.write(new Date().getFullYear());
-      </script>
-    </footer>
+    <!-- Footer -->
+    <div class="footer-container" id="footer-container"></div>
+    <!-- Modal -->
     <div class="modal" id="endgameModal">
       <p class="modal-title" id="endgameMsg"></p>
       <button class="btn btn-restart" id="restartBtn">Play again</button>
     </div>
     <div class="overlay" id="overlay"></div>
-
     <!-- Scripts -->
+    <script src="../../components/header.js"></script>
+    <script src="../../components/footer.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

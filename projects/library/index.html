@@ -11,18 +11,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1><a href="../../index.html">Odin Recipes</a></h1>
-      <nav class="dropdown">
-        <button class="dropbtn">&#9776;</button>
-        <ul class="dropdown-content">
-          <li><a href="../fizz/index.html">FizzBuzz</a></li>
-          <li><a href="../jokenpo/index.html">JoKenPo</a></li>
-          <li><a href="../library/index.html">Library</a></li>
-        </ul>
-      </nav>
-    </header>
-
+    <!-- Header Page -->
+    <div class="header-container-page" id="header-container-page"></div>
+    <!-- Main Container -->
     <main class="main-container">
       <button class="btn add-btn" id="openAddBookModalBtn">
         <h2>+ Add Book</h2>
@@ -30,13 +21,9 @@
 
       <div class="book-list" id="bookList"></div>
     </main>
-
-    <footer class="footer">
-      Copyright © Odin Recipes
-      <script>
-        document.write(new Date().getFullYear());
-      </script>
-    </footer>
+    <!-- Footer -->
+    <div class="footer-container" id="footer-container"></div>
+    <!-- Modal -->
     <div class="modal" id="addBookModal">
       <form class="add-book-form" id="addBookForm">
         <label for="addBookForm" class="modal-title">Add a new Book</label>
@@ -55,8 +42,9 @@
       </form>
     </div>
     <div class="overlay" id="overlay"></div>
-
     <!-- Scripts -->
+    <script src="../../components/header.js"></script>
+    <script src="../../components/footer.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
