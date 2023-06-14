@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const header = `
-    <header>
+    <header class="header-weather">
       <div></div>
       <nav class="dropdown">
         <button class="dropbtn">&#9776;</button>
