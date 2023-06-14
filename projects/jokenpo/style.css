@@ -68,7 +68,7 @@
   padding: 0.625rem 1.25rem;
   margin-top: 1.563rem;
   margin-bottom: 1rem;
-  color: #f9faf8;
+  color: var(--primary-light);
 }
 
 @media (max-width: 550px) {

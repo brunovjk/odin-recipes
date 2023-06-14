@@ -22,6 +22,8 @@
   justify-content: center;
   align-items: space-around;
   margin: 0;
+  padding: 1em 0 1em 0;
+
   gap: 2rem;
 }
 
@@ -34,4 +36,62 @@
 .btn-rst {
   margin: 1rem;
   font-size: 1.5rem;
+}
+
+.field {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  background-color: var(--warn-light-background);
+  color: var(--primary-main);
+  border: none;
+  border-radius: 0px;
+  border-bottom: 3px solid var(--primary-main);
+  border-right: 3px solid var(--primary-main);
+  outline: none;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+}
+
+.field.no-r {
+  border-right: none;
+}
+
+.field.no-b {
+  border-bottom: none;
+}
+
+.field p {
+  margin: 0px;
+}
+
+.field:hover {
+  cursor: pointer;
+  background-color: var(--light-background);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+}
+
+.selected {
+  color: var(--primary-main);
+  background-color: var(--primary-light);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+  cursor: default;
+}
+
+.selected:hover {
+  color: var(--primary-main);
+  background-color: var(--primary-light);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+}
+
+.win {
+  display: flex;
+  line-height: 1.5rem;
+  gap: 2rem;
+}
+
+.result {
+  font-size: 1.5rem;
+}
+.hide {
+  display: none;
 }

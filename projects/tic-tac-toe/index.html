@@ -15,11 +15,20 @@
     <div class="header-container-page" id="header-container-page"></div>
     <!-- Main Container -->
     <main class="main container" id="main-container">
-      <h2>Choose a Symbol</h2>
+      <div class="win">
+        <h2 class="title" id="title-choose">Choose a Symbol</h2>
+        <h2 class="winner hide" id="title-end-game">The Winner is</h2>
+
+        <p class="x-text result hide">X</p>
+        <p class="o-text result hide">O</p>
+        <p class="draw result hide">It's a Draw</p>
+      </div>
+
       <div class="player">
         <button class="btn btn-p x">X</button>
         <button class="btn btn-p o">O</button>
       </div>
+
       <div class="board">
         <button class="field"><p></p></button>
         <button class="field"><p></p></button>
@@ -31,6 +40,7 @@
         <button class="field no-b"><p></p></button>
         <button class="field no-b no-r"><p></p></button>
       </div>
+
       <div class="rst">
         <button class="btn btn-rst restart">Restart</button>
       </div>

@@ -41,8 +41,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1f2937;
-  background-color: #e5e7eb;
+  color: var(--primary-main);
+  background-color: var(--primary-light);
   gap: 1rem;
 }
 
@@ -92,8 +92,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #1f2937;
-  background-color: #e5e7eb;
+  color: var(--primary-main);
+  background-color: var(--primary-light);
   padding: 4rem 30%;
   gap: 0.75rem;
 }
